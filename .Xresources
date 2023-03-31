@@ -1,1 +1,18 @@
-../../../.Xresources
+! Color theme to be placed in ~/.Xresources file
+! Enable it at runtime with :
+! $ xrdb ~/.Xresources
+! or
+! $ cat ~/.Xresources | xrdb
+! ---
+! or
+! $ xrdb merge ~/.Xresources
+
+ *background: #000000
+ *foreground: #ffffff
+ Xft.dpi: 96
+! https://tronche.com/wiki/Howto_specify_X_scalable_fonts_from_the_command_line
+! when searching for scalable fonts, using xlsfonts,
+! pxlsz, the first # after the --, is	Pixel size; 0 for a scalable font
+! once a "scalable" font is found, replace the 0 w/ the height in pixels
+! 42 is the height in pixels -- replace as needed
+ Xmessage*font: -misc-fixed-medium-r-normal--42-0-75-75-c-0-iso8859-1
