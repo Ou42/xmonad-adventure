@@ -1,10 +1,10 @@
 Config { overrideRedirect = False
-       , allDesktops = True
+       , allDesktops = False
        , pickBroadest = True
-       , font     = "xft:iosevka-24"
-       , bgColor  = "#5f0000"
+       , font     = "xft:iosevka-18"
+       , bgColor  = "#005f00"
        , fgColor  = "#f8f8f2"
-       , position = TopSize L 90 42
+       , position = TopSize L 90 38
        , commands = [ Run Weather "EGPF"
                         [ "--template", "<weather> <tempC>°C"
                         , "-L", "0"

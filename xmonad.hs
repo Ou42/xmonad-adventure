@@ -65,16 +65,16 @@ myStartupHook = do
   -- spawnOnce "picom -c --shadow-red 1 --shadow-green 0 --shadow-blue 1 &"
   -- spawnOnce "picom -cf &"
 
-    spawnOnce $  "trayer --edge top"        -- or try: "--edge bottom"
-                  ++ " --align right"
-                  ++ " --SetDockType true"
-                  ++ " --SetPartialStrut true"
-                  ++ " --expand true"
-                  ++ " --width 10"          -- NEEDED or ELSE!!
-                  ++ " --transparent true"
-                  ++ " --tint 0x5f0000"
-                  ++ " --monitor 1"         -- ext monitor ?!
-                  ++ " --height 42 &"
+  spawnOnce $  "trayer --edge top"        -- or try: "--edge bottom"
+                ++ " --align right"
+                ++ " --SetDockType true"
+                ++ " --SetPartialStrut true"
+                ++ " --expand true"
+                ++ " --width 10"          -- NEEDED or ELSE!!
+                ++ " --transparent true"
+                ++ " --tint 0x5f0000"
+                ++ " --monitor 1"         -- ext monitor ?!
+                ++ " --height 42 &"
 
   spawnOnce "feh --bg-fill --no-fehbg ~/.wallpapers/comet.jpg"
 
